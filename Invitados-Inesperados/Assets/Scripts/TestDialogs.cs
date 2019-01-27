@@ -11,7 +11,7 @@ public class TestDialogs : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //controller.StarDialogSequence(firstDialog);
+        controller.StarDialogSequence(firstDialog);
     }
 
     private void Update()

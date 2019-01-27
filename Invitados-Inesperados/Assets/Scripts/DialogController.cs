@@ -35,6 +35,14 @@ public class DialogController : MonoBehaviour
     public void StarDialogSequence(Dialog dialog)
     {
         Debug.Log("entrando a dialog sequence " + dialog.gameObject.name);
+        if(dialog.consequence)
+        {
+            AppManager.Instance.miedometro++;
+        }
+        if (dialog.GetType() == typeof(ConsequenceDialog))
+        {
+            ((ConsequenceDialog)dialog).SetConsequence();
+        }
         areDialogsActive = true;
         currentDialog = dialog;
         UI.gameObject.SetActive(true);

@@ -13,7 +13,7 @@ public enum Actor
 
 public abstract class Dialog : MonoBehaviour
 {
-
+    public bool consequence = false;
     public UnityEvent StartEvents;
     public UnityEvent ExecutionEvents;
     public UnityEvent EndEvents;
