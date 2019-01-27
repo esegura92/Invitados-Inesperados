@@ -9,6 +9,7 @@ public class InteractableObject : MonoBehaviour
     public Button UIButton;
     public DiaryEntry Entry;
     public Dialog InteractionDialog;
+    [SerializeField]bool interactImmediately;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,8 +32,12 @@ public class InteractableObject : MonoBehaviour
     }
     public void ShowButton()
     {
-        UIButton.onClick.AddListener(Action);
-        UIButton.gameObject.SetActive(true);
+        if(interactImmediately){
+            Action();
+        }else{
+            UIButton.onClick.AddListener(Action);
+            UIButton.gameObject.SetActive(true);
+        }
     }
 
     public void HideButton()
@@ -46,7 +51,7 @@ public class InteractableObject : MonoBehaviour
         HideButton();
         if(Entry != null)
         {
-            AppManager.Instance.Inventory.Add(Entry);
+            Entry.Collect();
             Entry = null;
         }
         DialogController.Instance.StarDialogSequence(InteractionDialog);

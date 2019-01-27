@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class UI_Dialog : MonoBehaviour
 {
+    [SerializeField]RebuildLayout mainTextLayout;
+    [SerializeField]RebuildLayout optionsLayout;
+    [SerializeField]RebuildLayout fullDialogueLayout;
     public GameObject UIDialog;
     public Button ActionButton;
     public Text text;
@@ -44,7 +47,6 @@ public class UI_Dialog : MonoBehaviour
         Invoke("ButtonCooldown", 0.2f);
         if (dialogText.GetType() == typeof(DecisionDialog))
         {
-            OptionsContainer.SetActive(true);
             StartCoroutine(SetTextSequence(true));
         }
         else
@@ -75,9 +77,14 @@ public class UI_Dialog : MonoBehaviour
         } // end for
         if(decition)
         {
+
+            OptionsContainer.SetActive(true);
+            mainTextLayout.ForceRebuild();
+            fullDialogueLayout.ForceRebuild();
             ActionButton.interactable = false;
             ActionButton.gameObject.SetActive(false);
             ShowOptions(dialogText as DecisionDialog);
+            optionsLayout.ForceRebuild();
         }
             
         InCoroutine = false;
