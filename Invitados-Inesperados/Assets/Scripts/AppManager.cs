@@ -29,7 +29,7 @@ public class AppManager : MonoBehaviour
 
     public DiaryEntry CurrentEntry()
     {
-        if(unlockedEntries.Count > 0)
+        if(unlockedEntries.Count > currentEntryIndex)
         {
             return unlockedEntries[currentEntryIndex];
         }
@@ -51,7 +51,7 @@ public class AppManager : MonoBehaviour
 
     public DiaryEntry NextEntry()
     {
-        currentEntryIndex--;
+        currentEntryIndex++;
         if (currentEntryIndex >= unlockedEntries.Count)
             currentEntryIndex = 0;
 
