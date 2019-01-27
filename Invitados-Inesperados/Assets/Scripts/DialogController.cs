@@ -56,7 +56,6 @@ public class DialogController : MonoBehaviour
 
     public void NextDialog(Dialog nextDialog)
     {
-
         if (nextDialog != null)
         {
             Debug.Log("llendo al next dialog " + nextDialog.gameObject.name);

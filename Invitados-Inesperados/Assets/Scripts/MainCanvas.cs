@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.Events;
 public class MainCanvas : MonoBehaviour
 {
     [HideInInspector]
@@ -13,12 +14,13 @@ public class MainCanvas : MonoBehaviour
         }
     }
     [SerializeField]UI_Dialog dialogue;
-    public UI_DiaryEntry diaryEntry;
     public UI_Dialog Dialogue{
         get{
             return dialogue;
         }
     }
+    public UI_DiaryEntry diaryEntry;
+    [SerializeField]Button interactButton;
 
     // Start is called before the first frame update
     void Awake()
@@ -39,5 +41,13 @@ public class MainCanvas : MonoBehaviour
     public void OpenDiaryEntry(DiaryEntry entry){
         diaryEntry.SetDiaryEntry(entry);
         diaryEntry.gameObject.SetActive(true);
+    }
+    public void AddListenerToInteractButton(UnityAction action){
+        interactButton.onClick.AddListener(action);
+        interactButton.gameObject.SetActive(true);
+    }
+    public void RemoveLintenerToInteractButton(UnityAction action){
+        interactButton.onClick.RemoveListener(action);
+        interactButton.gameObject.SetActive(false);
     }
 }
