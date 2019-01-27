@@ -135,4 +135,8 @@ public class UI_Dialog : MonoBehaviour
         ActionButton.onClick.RemoveListener(action);
         ActionButton.gameObject.SetActive(enableButton);
     }
+
+    public void ChooseOption(int option){
+        DialogController.Instance.ChooseOption(option);
+    }
 }
