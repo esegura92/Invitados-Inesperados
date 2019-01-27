@@ -27,7 +27,11 @@ public class UI_Dialog : MonoBehaviour
         text.text = dialogText.DialogText;
         if (dialogText.GetType() == typeof(DecisionDialog))
         {
+            OptionsContainer.SetActive(true);
+             mainTextLayout.ForceRebuild();
+            fullDialogueLayout.ForceRebuild();
             ShowOptions(dialogText as DecisionDialog);
+            optionsLayout.ForceRebuild();
         }
         else
         {
