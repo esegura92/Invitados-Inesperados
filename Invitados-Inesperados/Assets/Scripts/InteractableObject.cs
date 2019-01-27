@@ -14,11 +14,10 @@ public class InteractableObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //add listener
-        if(!interactionStarted){
-            interactionStarted = true;
+            if(!interactionStarted||!disableInteractionAfterCollision)
             ShowButton();
-        }
         
+            interactionStarted =true;
         //show ui interaction if player havent interact
     }
 
@@ -31,6 +30,7 @@ public class InteractableObject : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         //delete listener
+        if(!disableInteractionAfterCollision)
         HideButton();
         // hide ui interaction
     }
