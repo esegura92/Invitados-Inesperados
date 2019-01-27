@@ -25,6 +25,7 @@ public class UI_Dialog : MonoBehaviour
         
         StopAllCoroutines();
         text.text = dialogText.DialogText;
+             mainTextLayout.ForceRebuild();
         if (dialogText.GetType() == typeof(DecisionDialog))
         {
             OptionsContainer.SetActive(true);
