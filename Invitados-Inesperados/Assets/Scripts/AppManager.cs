@@ -11,7 +11,18 @@ public class AppManager : MonoBehaviour
         get { return instance; }
     }
     [HideInInspector]
-    public int miedometro;
+    public int miedometro
+    {
+        set
+        {
+            PlayerPrefs.SetInt("miedometro", value);
+        }
+
+        get
+        {
+            return PlayerPrefs.GetInt("miedometro", 0);
+        }
+    }
     public DiaryEntry[] Inventory;
 
 
@@ -26,6 +37,5 @@ public class AppManager : MonoBehaviour
 
         instance = this;
         //DontDestroyOnLoad(this.gameObject);
-        miedometro = 0;
     }
 }

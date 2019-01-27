@@ -294,6 +294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Entry4
   text: text 4
+  header: 
+  footer: 
 --- !u!1001 &143599028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -863,6 +865,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6865418816101778119, guid: 8a4206d10c179be43bb2a42c5fe7e2bd,
+        type: 3}
+      propertyPath: NodeDialog
+      value: 
+      objectReference: {fileID: 293775134}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a4206d10c179be43bb2a42c5fe7e2bd, type: 3}
 --- !u!114 &293775133 stripped
@@ -875,6 +882,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8f4f7db4f2433746bdf37cc0ccf8bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &293775134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6865418816375795037, guid: 8a4206d10c179be43bb2a42c5fe7e2bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 293775132}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2a77d882602804299bacef718ca688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &384584498
@@ -922,6 +941,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Entry5
   text: text 5
+  header: 
+  footer: 
 --- !u!1 &410018838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1032,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Entry3
   text: text 3
+  header: 
+  footer: 
 --- !u!1 &625105946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Entry1
   text: text 1
+  header: 
+  footer: 
 --- !u!1 &727811624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Entry2
   text: text 2
+  header: 
+  footer: 
 --- !u!1 &1892036192
 GameObject:
   m_ObjectHideFlags: 0

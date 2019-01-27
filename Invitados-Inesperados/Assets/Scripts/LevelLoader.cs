@@ -42,14 +42,14 @@ public class LevelLoader : MonoBehaviour
         else
         {
             bool enableButton = true;
-            MainCanvas.Instance.Dialogue.AddActionToButton(Action, enableButton);
+            MainCanvas.Instance.AddListenerToInteractButton(Action);
         }
     }
 
     public void HideButton()
     {
         bool enableButton = false;
-        MainCanvas.Instance.Dialogue.RemoveActionToButton(Action, enableButton);
+        MainCanvas.Instance.RemoveLintenerToInteractButton(Action);
     }
 
     public void Action()
