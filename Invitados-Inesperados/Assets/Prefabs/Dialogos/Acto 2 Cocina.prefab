@@ -381,7 +381,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   shortText: Bueno.
-  DialogText: 'Tu: Suena bien, empecemos a calentar el horno.'
+  DialogText: Suena bien, empecemos a calentar el horno.
   actor: 1
   NodeDialog: {fileID: 1527598998632552267}
 --- !u!1 &1527598998864079370
@@ -540,8 +540,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   shortText: 
-  DialogText: "Huay! La pr\xF3xima vez coloca los platos en su lugar. Me lleve un
-    buen susto."
+  DialogText: "Huay! La pr\xF3xima vez coloca los platos en su lugar. Me llev\xE9
+    un buen susto."
   actor: 2
   NodeDialog: {fileID: 1527598999751079489}
 --- !u!1 &1527598999606921194

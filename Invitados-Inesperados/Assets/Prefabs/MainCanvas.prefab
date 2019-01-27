@@ -1655,6 +1655,7 @@ GameObject:
   - component: {fileID: 1214626006412751798}
   - component: {fileID: 1214626006412751793}
   - component: {fileID: 1214626006412751792}
+  - component: {fileID: 264505767542334031}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -1745,6 +1746,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &264505767542334031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214626006412751795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d0e84402851496d9ea43d8e9adacdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueControllerReference: {fileID: 0}
+  dialogue: {fileID: 1214626006757455326}
 --- !u!1 &1214626006452977010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,8 +2182,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ActionListener
+      - m_Target: {fileID: 264505767542334031}
+        m_MethodName: DialogueControllerNextDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

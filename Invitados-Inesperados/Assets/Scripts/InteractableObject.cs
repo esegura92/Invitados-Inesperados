@@ -6,15 +6,19 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Collider2D))]
 public class InteractableObject : MonoBehaviour
 {
-    public Button UIButton;
     public DiaryEntry Entry;
     public Dialog InteractionDialog;
     [SerializeField]bool interactImmediately;
-
+    [SerializeField]bool disableInteractionAfterCollision;
+    bool interactionStarted;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //add listener
-        ShowButton();
+        if(!interactionStarted){
+            interactionStarted = true;
+            ShowButton();
+        }
+        
         //show ui interaction if player havent interact
     }
 
@@ -35,15 +39,15 @@ public class InteractableObject : MonoBehaviour
         if(interactImmediately){
             Action();
         }else{
-            UIButton.onClick.AddListener(Action);
-            UIButton.gameObject.SetActive(true);
+            bool enableButton = true;
+            MainCanvas.Instance.Dialogue.AddActionToButton(Action,enableButton);
         }
     }
 
     public void HideButton()
     {
-        UIButton.onClick.RemoveListener(Action);
-        UIButton.gameObject.SetActive(false);
+        bool enableButton = false;
+        MainCanvas.Instance.Dialogue.RemoveActionToButton(Action,enableButton);
     }
 
     public void Action()

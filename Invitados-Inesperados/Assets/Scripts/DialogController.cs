@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogController : MonoBehaviour
 {
-    public UI_Dialog UI;
+    public MainCanvas mainCanvas;
     private bool areDialogsActive;
     public bool AreDialogsActive
     {
@@ -29,7 +29,7 @@ public class DialogController : MonoBehaviour
 
         instance = this;
         areDialogsActive = false;
-        UI.gameObject.SetActive(false);
+        mainCanvas.dialogueControllerReference = this;
     }
 
     public void StarDialogSequence(Dialog dialog)
@@ -45,13 +45,13 @@ public class DialogController : MonoBehaviour
         }
         areDialogsActive = true;
         currentDialog = dialog;
-        UI.gameObject.SetActive(true);
-        UI.SetText(dialog);
+        mainCanvas.Dialogue.gameObject.SetActive(true);
+        mainCanvas.Dialogue.SetText(dialog);
         //dialog ui show dialog: currentdialog.showText with time
     }
     public void FinishText()
     {
-        UI.FillText();
+        mainCanvas.Dialogue.FillText();
     }
 
     public void NextDialog(Dialog nextDialog)
@@ -66,7 +66,7 @@ public class DialogController : MonoBehaviour
         {
             Debug.Log("Dialogo nulo, se acabo");
             currentDialog = null;
-            UI.HidePanel();
+            mainCanvas.Dialogue.HidePanel();
             areDialogsActive = false;
         } // end else
     }
@@ -80,7 +80,7 @@ public class DialogController : MonoBehaviour
     public void ActionListener()
     {
         Debug.Log("puchando boton");
-        if (UI.InCoroutine)
+        if (mainCanvas.Dialogue.InCoroutine)
             FinishText();
         else NextDialog(currentDialog.NextDialog);
     }

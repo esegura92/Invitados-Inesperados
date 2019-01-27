@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.Events;
 public class UI_Dialog : MonoBehaviour
 {
     [SerializeField]RebuildLayout mainTextLayout;
@@ -36,6 +36,7 @@ public class UI_Dialog : MonoBehaviour
         }
         else
         {
+        ActionButton.gameObject.SetActive(true);
             Invoke("ButtonCooldown", 0.2f);
         }
     }
@@ -122,5 +123,15 @@ public class UI_Dialog : MonoBehaviour
         UIDialog.SetActive(false);
         ActionButton.gameObject.SetActive(false);
         ActionButton.interactable = true;
+    }
+
+    public void AddActionToButton(UnityAction action, bool enableButton){
+        ActionButton.onClick.AddListener(action);
+        ActionButton.gameObject.SetActive(enableButton);
+    }
+
+    public void RemoveActionToButton(UnityAction action,bool enableButton){
+        ActionButton.onClick.RemoveListener(action);
+        ActionButton.gameObject.SetActive(enableButton);
     }
 }
