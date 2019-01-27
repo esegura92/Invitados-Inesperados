@@ -68,11 +68,10 @@ public class UI_Dialog : MonoBehaviour
         Debug.Log("empezando coroutina" + dialogText.DialogText);
         ActionButton.gameObject.SetActive(false);
         InCoroutine = true;
-        float timeBetweenCharacters = textSpeed / dialogText.DialogText.Length;
         for(int i = 0; i < dialogText.DialogText.Length; i++)
         {
             text.text += dialogText.DialogText[i];
-            yield return new WaitForSeconds(timeBetweenCharacters);
+            yield return new WaitForSeconds(textSpeed);
         } // end for
         if(decition)
         {

@@ -29,6 +29,7 @@ public class DialogController : MonoBehaviour
 
         instance = this;
         areDialogsActive = false;
+        UI.gameObject.SetActive(false);
     }
 
     public void StarDialogSequence(Dialog dialog)
@@ -36,6 +37,7 @@ public class DialogController : MonoBehaviour
         Debug.Log("entrando a dialog sequence " + dialog.gameObject.name);
         areDialogsActive = true;
         currentDialog = dialog;
+        UI.gameObject.SetActive(true);
         UI.SetText(dialog);
         //dialog ui show dialog: currentdialog.showText with time
     }
