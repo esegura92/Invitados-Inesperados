@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using TMPro;
 public class UI_Dialog : MonoBehaviour
 {
     [SerializeField]RebuildLayout mainTextLayout;
@@ -10,7 +11,7 @@ public class UI_Dialog : MonoBehaviour
     [SerializeField]RebuildLayout fullDialogueLayout;
     public GameObject UIDialog;
     public Button ActionButton;
-    public Text text;
+    public TextMeshProUGUI text;
     public GameObject OptionsContainer;
     public Button[] Options;
     public float textSpeed;
@@ -102,7 +103,7 @@ public class UI_Dialog : MonoBehaviour
         //OptionsContainer.SetActive(true);
         for(int i = 0; i < dialog.DecisionDialogs.Length; i++)
         {
-            Options[i].GetComponentInChildren<Text>().text = dialog.DecisionDialogs[i].shortText;
+            Options[i].GetComponentInChildren<TextMeshProUGUI>().text = dialog.DecisionDialogs[i].shortText;
             Options[i].gameObject.SetActive(true);
         } // end for
     }
