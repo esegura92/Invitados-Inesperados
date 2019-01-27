@@ -5,7 +5,7 @@ using UnityEngine;
 //[RequireComponent(typeof(Rigidbody2D))]
 public class TopDownMove : MonoBehaviour
 {
-
+    bool originalFaceIsRight;
     public float speed;
     [HideInInspector]
     public Vector2 destination;
@@ -33,8 +33,24 @@ public class TopDownMove : MonoBehaviour
         Vector2 direction = position - (Vector2)transform.position;
         Vector2 normalizedDir = direction.normalized;
         rigid.velocity = normalizedDir * speed;
+        SetCharacterDirection(direction.x>0);
     }
 
+    void SetCharacterDirection(bool faceRight){
+        float xScale = 0;
+        if(originalFaceIsRight)
+            if(faceRight)
+            xScale = 1;
+            else
+            xScale = -1;
+        else
+            if(faceRight)
+            xScale =-1;
+            else
+            xScale = 1;
+
+        transform.transform.localScale = new Vector3(xScale,1,1);
+    }
     private void FixedUpdate()
     {
         float dist = Vector2.Distance(transform.position, destination);
@@ -42,5 +58,9 @@ public class TopDownMove : MonoBehaviour
         {
             rigid.velocity = Vector2.zero;
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D col){
+        rigid.velocity = Vector2.zero;
     }
 }
