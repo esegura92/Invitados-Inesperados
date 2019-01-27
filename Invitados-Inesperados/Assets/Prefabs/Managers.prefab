@@ -1,0 +1,406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &562374350512643793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374350512643792}
+  - component: {fileID: 562374350512643807}
+  m_Layer: 0
+  m_Name: DialogController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374350512643792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350512643793}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562374351503681244}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562374350512643807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350512643793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ffa8bb7390349488c661fb0a392a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+--- !u!1 &562374350525733728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374350525733743}
+  - component: {fileID: 562374350525733742}
+  m_Layer: 0
+  m_Name: Entry3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374350525733743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350525733728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562374351503681244}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562374350525733742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350525733728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9c52f9cd8852944aeb24cca0da5168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: Entry3
+  text: "Escribo esta nota mientras espero a que llegue el doctor, ayer cuando llegu\xE9
+    de trabajar, encontr\xE9 a mi Lola en el suelo, se hab\xEDa ca\xEDdo de las escaleras,
+    al parecer se hab\xEDa roto una madera cuando pis\xF3 y sucedi\xF3 la tragedia.
+    No deb\xED haber ido a ese torneo de pesca y deb\xED de haber reparado las escaleras
+    a tiempo, pude haber evitado esta cat\xE1strofe, y ese trofeo que traje ayer,
+    solo me recuerda lo que pude haber evitado.\r\nEnseguida la llev\xE9 a la cama
+    y le puse su disco favorito en el tocadiscos pero la cosa no ha mejorado, tiene
+    muchas heridas en la cabeza y en el cuerpo, hoy amaneci\xF3 con fiebre y ha empeorado
+    durante el d\xEDa, no s\xE9 porqu\xE9 el doctor tarda tanto\r\n"
+  header: 14 de Octubre de 1976
+  footer: 
+--- !u!1 &562374350754607605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374350754607604}
+  - component: {fileID: 562374350754607603}
+  m_Layer: 0
+  m_Name: Entry5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374350754607604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350754607605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562374351503681244}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562374350754607603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350754607605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9c52f9cd8852944aeb24cca0da5168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: Entry5
+  text: Reparar las escaleras
+  header: 14 de Octubre de 1986
+  footer: 
+--- !u!1 &562374350910220264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374350910220279}
+  - component: {fileID: 562374350910220278}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374350910220279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350910220264}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2497592, y: 0.29232872, z: -0.11091349}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562374351503681244}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562374350910220278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374350910220264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d53730f58321a47bca7cdb4290ff36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inventory:
+  - {fileID: 562374351512128309}
+  - {fileID: 562374351627679465}
+  - {fileID: 562374350525733742}
+  - {fileID: 562374351021447295}
+  - {fileID: 562374350754607603}
+--- !u!1 &562374351021447281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374351021447280}
+  - component: {fileID: 562374351021447295}
+  m_Layer: 0
+  m_Name: Entry4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374351021447280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374351021447281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562374351503681244}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562374351021447295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374351021447281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9c52f9cd8852944aeb24cca0da5168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: Entry4
+  text: "Ma\xF1ana es el aniversario de 10 a\xF1os de la muerte de Lola, debo confesar
+    que desde su partida toda mi vida se ha deteriorado, tanto f\xEDsica como emocionalmente;
+    perd\xED a mis amigos, me volv\xED un alcoh\xF3lico con esa colecci\xF3n de licores
+    que para nada me sirve y tanto mal me ha hecho, y con trabajo tengo energ\xEDa
+    para pararme y caminar. Siento que mi momento final est\xE1 cerca y ya lo espero
+    con ansias. Si tan solo hubiera reparado las escaleras"
+  header: 13 de Octubre de 1986
+  footer: 
+--- !u!1 &562374351503681245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374351503681244}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374351503681244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374351503681245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 562374350910220279}
+  - {fileID: 562374350512643792}
+  - {fileID: 562374351512128310}
+  - {fileID: 562374351627679466}
+  - {fileID: 562374350525733743}
+  - {fileID: 562374351021447280}
+  - {fileID: 562374350754607604}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &562374351512128311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374351512128310}
+  - component: {fileID: 562374351512128309}
+  m_Layer: 0
+  m_Name: Entry1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374351512128310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374351512128311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562374351503681244}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562374351512128309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374351512128311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9c52f9cd8852944aeb24cca0da5168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: Entry1
+  text: "Hoy fue un d\xEDa normal como de costumbre, me despert\xE9 y Lola ya se hab\xEDa
+    levantado para hacer el desayuno. Me dio pereza tender la cama a pesar de que
+    ella se molestar\xEDa porque no se iba a dar cuenta hasta que yo estuviera afuera.
+    \r\nDesayun\xE9 huevos revueltos y sal\xED a cazar como de costumbre, en la jornada
+    caze un zorro y tres conejos, los cuales servir\xE1n para la cena. \r\nUna vez
+    regresado durante la tarde, Lola hab\xEDa preparado un pastel de manzana, no es
+    de mis comidas favoritas pero la de ella si, y ver la sonrisa que pone cada vez
+    que los prepara y los come, vale m\xE1s que mi apetito.\r\nNos la pasamos platicando
+    toda la tarde recordando c\xF3mo nos conocimos y nuestra juventud, despu\xE9s,
+    la ayude a preparar la cena, conejo asado cenamos y nos dirigimos a la habitaci\xF3n.
+    Subiendo las escaleras, Lola me coment\xF3 que la madera del piso de estas estaba
+    en mal estado, que ya era momento de cambiarlo, no quiero imaginarme el trabajo
+    que ha de costar hacer esto, con suerte se le olvidar\xE1 y podr\xE9 relajarme
+    un poco m\xE1s dentro de la casa.\r\nUna vez en el cuarto yo me sent\xE9 a leer
+    y ella se durmi\xF3 primero, no tard\xF3 en contagiar las ganas porque ya tengo
+    algo de sue\xF1o.\r\n"
+  header: '11 de octubre de 1976 '
+  footer: Cornelio Del Rancho
+--- !u!1 &562374351627679467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562374351627679466}
+  - component: {fileID: 562374351627679465}
+  m_Layer: 0
+  m_Name: Entry2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562374351627679466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374351627679467}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562374351503681244}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562374351627679465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562374351627679467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9c52f9cd8852944aeb24cca0da5168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: Entry2
+  text: "Me volv\xED a levantar a la misma hora, pero esta vez me encontr\xE9 con
+    una nota en la puerta que dec\xEDa que tendiera la cama, pens\xE9 en cambiar la
+    colcha, pero como es su favorita, ser\xE1 mejor evitar m\xE1s problemas y limitarme
+    a hacer lo que dice la nota.\r\nDesayun\xE9 un poco del pastel de manzana que
+    sobr\xF3 de ayer y sal\xED para el concurso de pesca anual.\r\nEl lago estaba
+    repleto de gente, me encontr\xE9 con Abraham y Gaspar, y entre los tres decidimos
+    hacer equipo\r\nAl final del dia salimos victoriosos, pescando un pez lagarto
+    gigante. Gracias a una maniobra que realic\xE9 cuando intent\xF3 escapar, justo
+    por esa raz\xF3n decidieron que yo deber\xEDa conservar el bien merecido trofeo.
+    \r\nRegres\xE9 a la casa tarde, despu\xE9s de la fiesta. Cuando llegu\xE9, Lola
+    ya se hab\xEDa dormido as\xED que asent\xE9 el trofeo en la sala y me fui a la
+    cama. \r\n"
+  header: 12 de octubre de 1976
+  footer: Cornelio Del Rancho

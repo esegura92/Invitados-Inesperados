@@ -60,7 +60,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   shortText: 
-  DialogText: You have found an Entry
+  DialogText: 'Encontraste una hoja de un diario.
+
+
+
+'
   actor: 0
   NodeDialog: {fileID: 0}
 --- !u!1 &4635042278515032719
