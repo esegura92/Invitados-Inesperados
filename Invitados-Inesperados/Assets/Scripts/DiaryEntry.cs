@@ -7,10 +7,17 @@ public class DiaryEntry : MonoBehaviour
     public string id;
     [TextArea]
     public string text;
+    public string header;
+    public string footer;
     public void Collect(){
-
-        //AppManager.Instance.Inventory.Add(this);
         PlayerPrefs.SetInt(id, 1);
-        //gameObject.SetActive(false);
+        /*
+                //AppManager.Instance.Inventory.Add(this);
+
+                //gameObject.SetActive(false);
+                AppManager.Instance.Inventory.Add(this);
+                MainCanvas.Instance.diaryEntry.SetDiaryEntry(this);
+                gameObject.SetActive(false);
+        */
     }
 }
