@@ -189,12 +189,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d53730f58321a47bca7cdb4290ff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Inventory:
+  AllEntries:
   - {fileID: 562374351512128309}
   - {fileID: 562374351627679465}
   - {fileID: 562374350525733742}
   - {fileID: 562374351021447295}
   - {fileID: 562374350754607603}
+  unlockedEntries: []
+  currentEntryIndex: 0
 --- !u!1 &562374351021447281
 GameObject:
   m_ObjectHideFlags: 0

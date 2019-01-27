@@ -10,7 +10,12 @@ public class DiaryEntry : MonoBehaviour
     public string header;
     public string footer;
     public void Collect(){
+        if (PlayerPrefs.GetInt(id, 0) == 1)
+            return;
+
         PlayerPrefs.SetInt(id, 1);
+        AppManager.Instance.AddEntries();
+        MainCanvas.Instance.diaryEntry.SetDiaryEntry(this);
         /*
                 //AppManager.Instance.Inventory.Add(this);
 

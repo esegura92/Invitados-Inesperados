@@ -25,6 +25,8 @@ public class TopDownMove : MonoBehaviour
     /// <param name="y"></param>
     public void move(Vector2 position)
     {
+        if (DialogController.Instance.AreDialogsActive)
+            return;
         //curSpeed = walkSpeed;
         //maxSpeed = curSpeed;
         destination = position;

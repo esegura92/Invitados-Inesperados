@@ -23,9 +23,40 @@ public class AppManager : MonoBehaviour
             return PlayerPrefs.GetInt("miedometro", 0);
         }
     }
-    public DiaryEntry[] Inventory;
+    public DiaryEntry[] AllEntries;
 
+    public List<DiaryEntry> unlockedEntries;
 
+    public DiaryEntry CurrentEntry()
+    {
+        if(unlockedEntries.Count > 0)
+        {
+            return unlockedEntries[currentEntryIndex];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public int currentEntryIndex = 0;
+
+    public DiaryEntry BackEntry()
+    {
+        currentEntryIndex--;
+        if (currentEntryIndex < 0)
+            currentEntryIndex = unlockedEntries.Count - 1;
+        return CurrentEntry();
+    }
+
+    public DiaryEntry NextEntry()
+    {
+        currentEntryIndex--;
+        if (currentEntryIndex >= unlockedEntries.Count)
+            currentEntryIndex = 0;
+
+        return CurrentEntry();
+    }
 
     private void Awake()
     {
@@ -36,6 +67,35 @@ public class AppManager : MonoBehaviour
         }
 
         instance = this;
+        unlockedEntries = new List<DiaryEntry>();
+        AppManager.Instance.AddEntries();
         //DontDestroyOnLoad(this.gameObject);
+    }
+
+    public void AddEntries()
+    {
+        unlockedEntries.Clear();
+        if(PlayerPrefs.GetInt("Entry1", 0) == 1)
+        {
+            unlockedEntries.Add(AllEntries[0]);
+        }
+        if (PlayerPrefs.GetInt("Entry2", 0) == 1)
+        {
+            unlockedEntries.Add(AllEntries[1]);
+        }
+        if (PlayerPrefs.GetInt("Entry3", 0) == 1)
+        {
+            unlockedEntries.Add(AllEntries[2]);
+        }
+        if (PlayerPrefs.GetInt("Entry4", 0) == 1)
+        {
+            unlockedEntries.Add(AllEntries[3]);
+        }
+        if (PlayerPrefs.GetInt("Entry5", 0) == 1)
+        {
+            unlockedEntries.Add(AllEntries[4]);
+        }
+        
+
     }
 }
