@@ -13,6 +13,7 @@ public class MainCanvas : MonoBehaviour
         }
     }
     [SerializeField]UI_Dialog dialogue;
+    public UI_DiaryEntry diaryEntry;
     public UI_Dialog Dialogue{
         get{
             return dialogue;
@@ -29,9 +30,14 @@ public class MainCanvas : MonoBehaviour
         }
         instance = this;
         dialogue.gameObject.SetActive(false);
+        diaryEntry.gameObject.SetActive(false);
     }
 
     public void DialogueControllerNextDialogue(){
         dialogueControllerReference.ActionListener();
+    }
+    public void OpenDiaryEntry(DiaryEntry entry){
+        diaryEntry.SetDiaryEntry(entry);
+        diaryEntry.gameObject.SetActive(true);
     }
 }
