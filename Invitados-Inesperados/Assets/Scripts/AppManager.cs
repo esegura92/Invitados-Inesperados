@@ -12,7 +12,7 @@ public class AppManager : MonoBehaviour
     }
     [HideInInspector]
     public int miedometro;
-    public List<DiaryEntry> Inventory;
+    public DiaryEntry[] Inventory;
 
 
 

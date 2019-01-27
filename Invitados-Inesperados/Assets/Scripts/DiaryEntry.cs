@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DiaryEntry : MonoBehaviour
 {
-    public int id;
+    public string id;
     [TextArea]
     public string text;
     public void Collect(){
 
-        AppManager.Instance.Inventory.Add(this);
-        gameObject.SetActive(false);
+        //AppManager.Instance.Inventory.Add(this);
+        PlayerPrefs.SetInt(id, 1);
+        //gameObject.SetActive(false);
     }
 }

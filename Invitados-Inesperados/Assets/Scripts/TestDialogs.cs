@@ -5,8 +5,6 @@ using UnityEngine.EventSystems;
 
 public class TestDialogs : MonoBehaviour
 {
-    public Dialog firstDialog;
-    public DialogController controller;
     public TopDownMove player;
     // Start is called before the first frame update
     void Start()
