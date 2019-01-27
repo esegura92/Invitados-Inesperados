@@ -10,8 +10,8 @@ public class DialogController : MonoBehaviour
     {
         get { return areDialogsActive; }
     }
-    private DialogController instance;
-    public DialogController Instance
+    private static DialogController instance;
+    public static DialogController Instance
     {
         get { return instance; }
     }
@@ -21,10 +21,12 @@ public class DialogController : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
+        // if the singleton hasn't been initialized yet
+        if (instance != null && instance != this)
         {
-            Destroy(instance);
+            Destroy(this.gameObject);
         }
+
         instance = this;
         areDialogsActive = false;
     }
