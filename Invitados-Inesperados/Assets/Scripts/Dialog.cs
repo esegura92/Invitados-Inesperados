@@ -18,6 +18,7 @@ public abstract class Dialog : MonoBehaviour
     public UnityEvent ExecutionEvents;
     public UnityEvent EndEvents;
     public string shortText;
+    [TextArea()]
     public string DialogText;
     public Actor actor;
     protected Dialog nextDialog;
