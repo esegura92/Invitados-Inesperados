@@ -35,6 +35,7 @@ public class DialogController : MonoBehaviour
     public void StarDialogSequence(Dialog dialog)
     {
         Debug.Log("entrando a dialog sequence " + dialog.gameObject.name);
+        dialog.OnDialogStart();
         if(dialog.consequence)
         {
             AppManager.Instance.miedometro++;
@@ -56,6 +57,7 @@ public class DialogController : MonoBehaviour
 
     public void NextDialog(Dialog nextDialog)
     {
+        currentDialog.OnDialogEnd();
         if (nextDialog != null)
         {
             Debug.Log("llendo al next dialog " + nextDialog.gameObject.name);
