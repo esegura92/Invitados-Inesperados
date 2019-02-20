@@ -11,6 +11,7 @@ public class UI_Dialog : MonoBehaviour
     [SerializeField]RebuildLayout fullDialogueLayout;
     public GameObject UIDialog;
     public Button ActionButton;
+    public TextMeshProUGUI actor;
     public TextMeshProUGUI text;
     public GameObject OptionsContainer;
     public Button[] Options;
@@ -25,6 +26,7 @@ public class UI_Dialog : MonoBehaviour
         InCoroutine = false;
         
         StopAllCoroutines();
+        actor.text = dialogText.actor.ToString();
         text.text = dialogText.DialogText;
              mainTextLayout.ForceRebuild();
         if (dialogText.GetType() == typeof(DecisionDialog))
@@ -48,6 +50,7 @@ public class UI_Dialog : MonoBehaviour
         ActionButton.interactable = false;
         ActionButton.gameObject.SetActive(true);
         UIDialog.SetActive(true);
+        actor.text = _dialogText.actor.ToString();
         text.text = "";
         HideOptions();
         dialogText = _dialogText;
@@ -120,6 +123,7 @@ public class UI_Dialog : MonoBehaviour
     public void HidePanel()
     {
         text.text = "";
+        actor.text = "";
         HideOptions();
         UIDialog.SetActive(false);
         ActionButton.gameObject.SetActive(false);
