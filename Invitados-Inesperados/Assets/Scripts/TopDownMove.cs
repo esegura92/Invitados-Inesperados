@@ -5,7 +5,7 @@ using UnityEngine;
 //[RequireComponent(typeof(Rigidbody2D))]
 public class TopDownMove : MonoBehaviour
 {
-    bool originalFaceIsRight;
+    [SerializeField] bool originalFaceIsRight;
     public float speed;
     [HideInInspector]
     public Vector2 destination;
