@@ -32,7 +32,7 @@ public class UI_Dialog : MonoBehaviour
         if (dialogText.GetType() == typeof(DecisionDialog))
         {
             OptionsContainer.SetActive(true);
-             mainTextLayout.ForceRebuild();
+            mainTextLayout.ForceRebuild();
             fullDialogueLayout.ForceRebuild();
             ShowOptions(dialogText as DecisionDialog);
             optionsLayout.ForceRebuild();
@@ -44,12 +44,32 @@ public class UI_Dialog : MonoBehaviour
         }
     }
 
+    public Color GetTextColor(Actor actor)
+    {
+        Color textColor = Color.gray;
+        switch(actor)
+        {
+            case Actor.Couple:
+                textColor = Color.yellow;
+                break;
+            case Actor.You:
+                textColor = Color.green;
+                break;
+            case Actor.StoryTeller:
+                textColor = Color.red;
+                break;
+        }
+        return textColor;
+    }
+
     public void SetText(Dialog _dialogText)
     {
         Debug.Log("Entrando a set text");
         ActionButton.interactable = false;
         ActionButton.gameObject.SetActive(true);
         UIDialog.SetActive(true);
+        actor.color = GetTextColor(_dialogText.actor);
+        text.color = GetTextColor(_dialogText.actor);
         actor.text = _dialogText.actor.ToString();
         text.text = "";
         HideOptions();
